@@ -1,17 +1,20 @@
-## GPS logger tool for airodump-ng client data (CSV)
+## GPS logger tool for UNCC MEGR3241 Advanced Motorsports Instrumentation.
+Mac McAlpine
+111 Motorsports Research, UNC Charlotte USA
 
-This Python script is logging each second of time along with GPS position from GPSD. Later to be used to determine the GPS position of Wifi Client devices against airodump-ng CSV file.
+This Python script is logging 10hz of GPS position from GPSD. Later to be used with megalog viewer to determine performance metrics.
+m8n ublox gps units are sent the magic packets to enable 10hz output.
 
 ###Usage:
-Simply run the ./log_position.py
+Simply run sudo python gpslog2.py to start recording
 
-![alt tag](https://raw.githubusercontent.com/ggtd/independend-python-gps-logger-for-airodump-ng/master/screen2.png)
+Press control C to stop. You may need to hold the keys down.
 
-The logfile is writen into ./gps_log_file
-Log file is a TXT file. One line is representing one second in time and GPS.latitude + GPS.longitude.
+The logfile is writen into ./megr3241-x-x-x-x
 
-NOTE: Time in log-file is local device time, (not GPS-time). To match other data time source on local system.
+Copy the file to a USB drive and analyze the data with a PC using megalogviewer.
 
+Log file is a CSV file. The first line has the header.
 
 Have fun!
 
