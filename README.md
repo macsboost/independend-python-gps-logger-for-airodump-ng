@@ -10,7 +10,7 @@ Simply run sudo python gpslog2.py to start recording
 
 Press control C to stop. You may need to hold the keys down.
 
-The logfile is writen into ./megr3241-x-x-x-x
+The logfile is writen into ./megr3241-x-x-x-x.csv
 
 Copy the file to a USB drive and analyze the data with a PC using megalogviewer.
 
