@@ -89,7 +89,7 @@ if __name__ == '__main__':
           #log_string = log_string + "," + str(gpsd.utc)
           #log_string = log_string + "," + str(gpsd.fix.time) 
           log_string = log_string + "," + str(gpsd.fix.latitude) + "," + str(gpsd.fix.longitude)
-          log_string = log_string + "," + str(gpsd.fix.altitude*3.28084) + "," + str(gpsd.fix.speed*0.621) + "," + str(gpsd.fix.track) + str(gpsd.fix.mode)
+          log_string = log_string + "," + str(gpsd.fix.altitude*3.28084) + "," + str(gpsd.fix.speed*2.237) + "," + str(gpsd.fix.track) + str(gpsd.fix.mode)
           log_string = log_string + "\n"
           flog.write(log_string)
           flog.flush()
